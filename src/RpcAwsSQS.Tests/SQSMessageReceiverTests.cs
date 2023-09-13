@@ -70,7 +70,7 @@ namespace RpcAwsSQS.Tests
 
             // Assert
             await Assert.ThrowsAsync<TimeoutException>(act);
-            queueDeleteMock.Verify(v => v.ScheduleQueueDeletion(It.IsAny<DeleteQueueRequest>()), Times.Never);
+            queueDeleteMock.Verify(v => v.ScheduleQueueDeletion(It.IsAny<DeleteQueueRequest>()), Times.Once);
         }
 
         [Fact]
