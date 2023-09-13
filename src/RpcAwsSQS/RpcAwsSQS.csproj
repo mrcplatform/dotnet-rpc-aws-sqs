@@ -1,7 +1,15 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageId>RCPlataform.Aws.SQS.Rpc</PackageId>
+    <Version>0.0.1-alpha </Version>
+    <Authors>Rafael Scheffer</Authors>
+    <Company>RCPlataform</Company>
+    <Product>RCPlataform.Aws.SQS.Rpc</Product>
+    <Description>Implementation of the RPC pattern using SQS from aws</Description>
+    <PackageProjectUrl>https://github.com/rcplatform/dotnet-rpc-aws-sqs</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/rcplatform/dotnet-rpc-aws-sqs</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>

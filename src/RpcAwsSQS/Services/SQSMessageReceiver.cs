@@ -39,6 +39,11 @@ namespace RpcAwsSQS.Services
                     {
                         if (cts.Token.IsCancellationRequested)
                         {
+                            _sqsDeleter.ScheduleQueueDeletion(new DeleteQueueRequest
+                            {
+                                QueueUrl = queueReplyUrl
+                            });
+
                             throw new TimeoutException($"timeOutInSeconds {timeoutInSeconds}");
                         }
 
