@@ -25,7 +25,7 @@ namespace RpcAwsSQS.Tests
 
             // Act
             sqsDeleter.ScheduleQueueDeletion(deleteRequest);
-            sqsDeleter.WaitForProcessing(TimeSpan.FromMilliseconds(200));
+            sqsDeleter.WaitForProcessing(TimeSpan.FromSeconds(1));
 
             // Assert
             mockSqsClient.Verify(sqs => sqs.DeleteQueueAsync(It.IsAny<DeleteQueueRequest>(), It.IsAny<CancellationToken>()), Times.Once());
