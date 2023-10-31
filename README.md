@@ -51,7 +51,7 @@ Use the client **IRpcClient** to Send And Response or just Send messages
 
 ### Temporary Response Queue
 
-- Queue Name
+- Queue Name  
 `__responseQueue-Guid`
 
 - Queue Tags  
