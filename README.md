@@ -1,3 +1,6 @@
+![Build Status Homolog](https://github.com/rcplatform/dotnet-rpc-aws-sqs/actions/workflows/main.yml/badge.svg?branch=homolog)
+![Build Status Main](https://github.com/rcplatform/dotnet-rpc-aws-sqs/actions/workflows/main.yml/badge.svg?branch=main)
+
 ## DOTNET RPC AWS SQS
 Implementation of the RPC pattern with SQS queue
 
