@@ -39,8 +39,8 @@ namespace RpcAwsSQS.Services
                         {"VisibilityTimeout", "0"}
                     };
 
-            createQueueRequest.Tags.Add(Constants.KEY_TAG_CREATE_AT, now.ToString());
-            createQueueRequest.Tags.Add(Constants.KEY_TAG_EXPIRE_AT, now.AddSeconds(queueExpireTime).ToString());
+            createQueueRequest.Tags.Add(Constants.KEY_TAG_CREATE_AT, now.ToString("dd/MM/yyyy HH:mm:ss"));
+            createQueueRequest.Tags.Add(Constants.KEY_TAG_EXPIRE_AT, now.AddSeconds(queueExpireTime).ToString("dd/MM/yyyy HH:mm:ss"));
             createQueueRequest.Tags.Add(Constants.KEY_TAG_TYPE, Constants.VALUE_TAG_TYPE);
 
             var createQueueResponse = await _amazonSqs.CreateQueueAsync(createQueueRequest);
