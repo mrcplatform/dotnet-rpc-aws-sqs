@@ -52,16 +52,9 @@ Use the client **IRpcClient** to Send And Response or just Send messages
 ### Temporary Response Queue
 
 - Queue Name
-`__responseQueue-Guid
-`
+`__responseQueue-Guid`
 
 - Queue Tags
-`
-    __createAt: 'dd/MM/yyyy HH:mm:ss'(UTC)
-`
-`
-    __expireAt: 'dd/MM/yyyy HH:mm:ss' (createAt + timeOutInSeconds * 3)
-`
-`
-    __type: 'responseTempQueue'
-`
+`__createAt: 'dd/MM/yyyy HH:mm:ss'(UTC)`   
+`__expireAt: 'dd/MM/yyyy HH:mm:ss' (createAt + timeOutInSeconds * 3)`  
+`__type: 'responseTempQueue'`  
