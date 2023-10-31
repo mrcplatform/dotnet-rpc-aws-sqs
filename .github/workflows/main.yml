@@ -1,0 +1,27 @@
+name: Build
+
+on:
+  push:
+    branches: [ main, homolog ]
+  pull_request:
+    branches: [ main, homolog ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: 7.0.x
+    
+    - name: Restore dependencies
+      run: dotnet restore
+    
+    - name: Build
+      run: dotnet build
+    
+    - name: Test
+      run: dotnet test --verbosity normal
+      continue-on-error: false
