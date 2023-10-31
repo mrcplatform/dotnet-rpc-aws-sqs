@@ -6,18 +6,18 @@ Implementation of the RPC pattern with SQS queue
 
 #### How to use
 Resolve Dependency Injection with extension method **AddRpcClient**
-```dotnet
+```csharp
 Services.AddRpcClient(awsKey: "yourKey", awsSecretKey:"yourSecret", awsRegion: "yourAwsRegion");
 ```
 
 You can also use the [WSSDK.Extensions.NETCore.Setup](https://docs.aws.amazon.com/sdk-for-net/v3/developer-guide/net-dg-config-netcore.html) structure to resolve credentials
-```dotnet
+```csharp
 Services.AddRpcClient(configuration: Configuration)
 ```
 
 Use the client **IRpcClient** to Send And Response or just Send messages
 
-```dotnet
+```csharp
  public class ServiceExemple
  {
     private readonly IRpcClient _rpcClient;
