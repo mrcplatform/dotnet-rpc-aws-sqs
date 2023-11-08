@@ -1,5 +1,8 @@
-Homolog ![Build Status Homolog](https://github.com/rcplatform/dotnet-rpc-aws-sqs/actions/workflows/main.yml/badge.svg?branch=homolog)
-Main ![Build Status Main](https://github.com/rcplatform/dotnet-rpc-aws-sqs/actions/workflows/main.yml/badge.svg?branch=main)
+![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/mrcplatform/dotnet-rpc-aws-sqs/main.yml?logo=github&label=homolog&cacheSeconds=60)
+[![codecov Homolog](https://codecov.io/gh/mrcplatform/dotnet-rpc-aws-sqs/branch/homolog/graph/badge.svg?token=219aebed-874c-4a7e-a428-399e0710c9ca)](https://codecov.io/gh/mrcplatform/dotnet-rpc-aws-sqs)
+
+![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/mrcplatform/dotnet-rpc-aws-sqs/main.yml?logo=github&label=main&cacheSeconds=60)
+[![codecov Main](https://codecov.io/gh/mrcplatform/dotnet-rpc-aws-sqs/branch/main/graph/badge.svg?token=219aebed-874c-4a7e-a428-399e0710c9ca)](https://codecov.io/gh/mrcplatform/dotnet-rpc-aws-sqs)
 
 ## DOTNET RPC AWS SQS
 Implementation of the RPC pattern with SQS queue
@@ -21,7 +24,7 @@ Use the client **IRpcClient** to Send And Response or just Send messages
  public class ServiceExemple
  {
     private readonly IRpcClient _rpcClient;
-    private readonlye int _timeOutInSeconds = 120;
+    private readonly int _timeOutInSeconds = 120;
 
     public ServiceExemple(IRpcClient rpcClient)
     {
