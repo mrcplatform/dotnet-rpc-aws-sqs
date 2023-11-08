@@ -1,8 +1,8 @@
 ![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/mrcplatform/dotnet-rpc-aws-sqs/main.yml?logo=github&label=homolog&cacheSeconds=60)
-[![codecov Homolog](https://codecov.io/gh/mrcplatform/dotnet-rpc-aws-sqs/branch/homolog/graph/badge.svg?token=219aebed-874c-4a7e-a428-399e0710c9ca)](https://codecov.io/gh/mrcplatform/dotnet-rpc-aws-sqs)
+[![codecov Homolog](https://codecov.io/gh/mrcplatform/dotnet-rpc-aws-sqs/branch/homolog/graph/badge.svg?token=KHJ98TFEO9)](https://codecov.io/gh/mrcplatform/dotnet-rpc-aws-sqs)
 
 ![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/mrcplatform/dotnet-rpc-aws-sqs/main.yml?logo=github&label=main&cacheSeconds=60)
-[![codecov Main](https://codecov.io/gh/mrcplatform/dotnet-rpc-aws-sqs/branch/main/graph/badge.svg?token=219aebed-874c-4a7e-a428-399e0710c9ca)](https://codecov.io/gh/mrcplatform/dotnet-rpc-aws-sqs)
+[![codecov Main](https://codecov.io/gh/mrcplatform/dotnet-rpc-aws-sqs/branch/main/graph/badge.svg?token=KHJ98TFEO9)](https://codecov.io/gh/mrcplatform/dotnet-rpc-aws-sqs)
 
 ## DOTNET RPC AWS SQS
 Implementation of the RPC pattern with SQS queue
