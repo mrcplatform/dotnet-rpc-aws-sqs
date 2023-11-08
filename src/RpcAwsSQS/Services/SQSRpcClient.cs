@@ -29,5 +29,10 @@ namespace RpcAwsSQS.Services
 
             return response;
         }
+
+        public async Task SendAsync<TRequest>(TRequest request, string queueUrl)
+        {
+            await _messageSender.SendMessageAsync(request, queueUrl);
+        }
     }
 }

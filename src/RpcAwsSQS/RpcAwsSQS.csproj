@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <PackageId>RCPlataform.Aws.SQS.Rpc</PackageId>
-    <Version>0.0.1-alpha </Version>
+    <Version>0.0.2-alpha </Version>
     <Authors>Rafael Scheffer</Authors>
     <Company>RCPlataform</Company>
     <Product>RCPlataform.Aws.SQS.Rpc</Product>
