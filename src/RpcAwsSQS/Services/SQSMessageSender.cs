@@ -23,6 +23,24 @@ namespace RpcAwsSQS.Services
             _queueDeleter = queueDeleter;
         }
 
+        public async Task SendMessageAsync<TRequest>(TRequest message, string queueUrl)
+        {
+            var messageBody = _serializer.Serialize(message);
+
+            var requestMessage = new SendMessageRequest
+            {
+                QueueUrl = queueUrl,
+                MessageBody = messageBody
+            };
+
+            var requestResponse = await _amazonSqs.SendMessageAsync(requestMessage);
+
+            if (requestResponse.HttpStatusCode != System.Net.HttpStatusCode.OK)
+            {
+                throw new SendMessageQueueException("failed to send message");
+            }
+        }
+
         public async Task SendRPCMessageAsync<TRequest>(TRequest message, string queueUrl, string queueReplyUrl)
         {
             var messageBody = _serializer.Serialize(message);
